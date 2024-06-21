@@ -1,0 +1,132 @@
+{
+  "films": [
+    {
+      "id": "635910",
+      "vista": false,
+      "titulo": "El ultimo viaje del Demeter",
+      "buena": 1,
+      "mala": 0
+    },
+    {
+      "vista": true,
+      "id": "670292",
+      "titulo": "The Creator",
+      "buena": 0,
+      "mala": 1
+    },
+    {
+      "vista": false,
+      "id": "597208",
+      "titulo": "El callejón de las almas perdidas",
+      "buena": 0,
+      "mala": 0
+    },
+    {
+      "vista": true,
+      "id": "787699",
+      "titulo": "Wonka",
+      "buena": 1,
+      "mala": 0
+    },
+    {
+      "id": "507089",
+      "vista": false,
+      "titulo": "Five Nights at Freddy's",
+      "buena": 0,
+      "mala": 0
+    },
+    {
+      "id": "835504",
+      "vista": false,
+      "titulo": "Cinco Lobitos",
+      "buena": 1,
+      "mala": 0
+    },
+    {
+      "id": "609681",
+      "vista": false,
+      "titulo": "The Marvels",
+      "buena": 0,
+      "mala": 0
+    },
+    {
+      "id": "693134",
+      "vista": false,
+      "titulo": "Dune: Parte dos",
+      "buena": 0,
+      "mala": 0
+    },
+    {
+      "id": "615777",
+      "vista": true,
+      "titulo": "Babylon",
+      "buena": 0,
+      "mala": 0
+    },
+    {
+      "id": "823464",
+      "vista": true,
+      "titulo": "Godzilla y Kong: El nuevo imperio",
+      "buena": 0,
+      "mala": 1
+    },
+    {
+      "id": "1001311",
+      "vista": false,
+      "titulo": "En las profundidades del Sena",
+      "buena": 0,
+      "mala": 0
+    },
+    {
+      "id": "1189205",
+      "vista": false,
+      "titulo": "Blood and Snow",
+      "buena": 0,
+      "mala": 0
+    }
+  ],
+  "users": [
+    {
+      "name": "Javier",
+      "username": "Javierito",
+      "password": "Javier",
+      "id": "2234",
+      "online": true,
+      "email": "javimacias@gmail.com",
+      "image": "../images/Hombre.jpg"
+    },
+    {
+      "name": "Miriam",
+      "username": "Mirita",
+      "password": "Miriam",
+      "id": "2235",
+      "online": false,
+      "email": "miriampilar999@gmail.com",
+      "image": "../images/Hombre.jpg"
+    },
+    {
+      "id": "89",
+      "name": "Andres",
+      "username": "Andresiño",
+      "password": "Andres",
+      "email": "andres@gmail.com",
+      "online": false
+    },
+    {
+      "id": "bda6",
+      "name": "Andrea",
+      "username": "Andreitacometeelpollo",
+      "password": "Andrea",
+      "email": "pollo@gmail.com",
+      "online": false
+    },
+    {
+      "id": "9143",
+      "name": "Ariel",
+      "username": "Arielito",
+      "password": "Ariel",
+      "email": "ariel@gmail.com",
+      "online": false
+    }
+  ]
+}

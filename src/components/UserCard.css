@@ -1,0 +1,51 @@
+/* UserCard.css */
+.user-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-avatar {
+    position: relative; /* Para posicionar el indicador de estado */
+  }
+  
+  .avatar-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-right: 16px;
+  }
+  
+  .status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+  }
+  
+  .status-indicator-online {
+    background-color: green;
+  }
+  
+  .status-indicator-offline {
+    background-color: red;
+  }
+  
+  .user-info {
+    flex: 1; /* Para ocupar todo el espacio disponible */
+  }
+  
+  h2 {
+    margin-bottom: 8px;
+  }
+  
+  p {
+    margin: 4px 0;
+  }
+  

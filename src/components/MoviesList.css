@@ -1,0 +1,26 @@
+/* MoviesList.css */
+.movie-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+  
+  .movie-info {
+    flex-grow: 1;
+  }
+  
+  .movie-actions {
+    display: flex;
+    gap: 1rem; /* Espacio entre los botones */
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  

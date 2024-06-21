@@ -1,0 +1,18 @@
+/* MovieView.css */
+.movie-view {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Espacio entre la imagen y los detalles */
+    padding: 1rem;
+  }
+  
+  .movie-poster {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px; /* Opcional: Añadir un borde redondeado */
+  }
+  
+  .movie-details {
+    flex: 1;
+  }
+  
