@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import userService from '../services/users';
 
 const Register = () => {
@@ -6,6 +7,8 @@ const Register = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
+
+  const navigate = useNavigate(); // Hook para redirección
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +22,8 @@ const Register = () => {
       };
       const response = await userService.newUser(newUser);
       console.log('Usuario registrado:', response);
-      // Lógica adicional después de registrar al usuario, como redirigir a otra página o mostrar un mensaje de éxito
+      // Redirigir al componente LoginForm
+      navigate('/');
     } catch (error) {
       console.error('Error al registrar usuario:', error);
       // Manejo de errores, como mostrar un mensaje de error al usuario
@@ -77,3 +81,4 @@ const Register = () => {
 };
 
 export default Register;
+

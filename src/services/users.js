@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = "/api/users";
+const url = "http://localhost:3001/api/users";
 
 const getAll = async () => {
   const response = await axios.get(url);
@@ -14,6 +14,7 @@ const getById = async (id) => {
 
 const newUser = async (user) => {
   const response = await axios.post(url, user);
+  console.log('se añadio esto', user)
   return response.data;
 };
 
