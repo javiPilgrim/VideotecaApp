@@ -28,8 +28,9 @@ const FindMovie = () => {
   };
 
   const handleAddMovie = async (movie) => {
+    console.log('movie.id es ,',movie.id)
     const newMovie = {
-      id: movie.id.toString(), // Convertir id a string para que coincida con el formato en tu base de datos
+      idExterna: movie.id.toString(), // Convertir id a string para que coincida con el formato en tu base de datos
       vista: false,
       titulo: movie.title,
       buena: 0,

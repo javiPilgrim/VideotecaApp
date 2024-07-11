@@ -18,7 +18,7 @@ const LoginForm = ({ handleLogin, nav }) => {
       const user = users.find(u => u.name === name && u.password === password);
       if (user) {
         // Actualizar estado de usuario como online
-        await userService.updateUser(user.id, { ...user, online: true });
+        await userService.updateUser(user._id, { ...user, online: true });
         // Llamar a función de padre para manejar el inicio de sesión
         handleLogin(user);
         // Redirigir a la página principal o a donde sea necesario

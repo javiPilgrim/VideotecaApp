@@ -19,7 +19,7 @@ const MoviesList = () => {
     };
 
     fetchFilms();
-  }, []);
+  }, [pelis]);
 
   const handleDelete = async (id) => {
     const confirmDelete = window.confirm("¿Estás seguro de que deseas eliminar esta película?");
@@ -82,15 +82,15 @@ const MoviesList = () => {
       </div>
       <ul>
         {filtrarPeliculas().map(peli => (
-          <li key={peli.id} className="movie-item">
+          <li key={peli._id} className="movie-item">
             <div className="movie-info">
-              <Link to={`/movie/${peli.id}`}>{peli.titulo}</Link>
+              <Link to={`/movie/${peli.idExterna}`}>{peli.titulo}</Link>
             </div>
             <div className="movie-actions">
-              <button onClick={() => handleToggleVista(peli.id, peli.vista)}>
+              <button onClick={() => handleToggleVista(peli._id, peli.vista)}>
                 {peli.vista ? 'Vista' : 'No vista'}
               </button>
-              <button onClick={() => handleDelete(peli.id)}>Eliminar</button>
+              <button onClick={() => handleDelete(peli._id)}>Eliminar</button>
             </div>
           </li>
         ))}

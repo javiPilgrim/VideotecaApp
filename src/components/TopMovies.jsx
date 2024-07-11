@@ -31,7 +31,7 @@ const TopMovies = () => {
       <h2>Top 10 Películas Mejor Valoradas</h2>
       <ul>
         {topMovies.map(movie => (
-          <li key={movie.id}>
+          <li key={movie.idExterna}>
             <strong>{movie.titulo}</strong> - Buena: {movie.buena}
           </li>
         ))}

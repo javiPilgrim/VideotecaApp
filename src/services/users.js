@@ -25,7 +25,6 @@ const updateUser = async (id, updatedUser) => {
 
 const deleteFilm = async (id) => {
   const response = await axios.delete(`${url}/${id}`)
-  console.log('Se ha borrado')
   return response
 }
 

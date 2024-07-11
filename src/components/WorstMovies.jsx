@@ -31,7 +31,7 @@ const WorstMovies = () => {
       <h2>Top 10 Películas Peor Valoradas</h2>
       <ul>
         {worstMovies.map(movie => (
-          <li key={movie.id}>
+          <li key={movie.idExterna}>
             <strong>{movie.titulo}</strong> - Mala: {movie.mala}
           </li>
         ))}

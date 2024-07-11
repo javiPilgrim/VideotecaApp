@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import filmService from '../services/films';
 import Votos from './Votos';
 import './MovieView.css'; // Importa el archivo CSS
@@ -22,7 +22,7 @@ const MovieView = () => {
         
         // Verificar si la película está en la base de datos interna
         const allFilms = await filmService.getAll(); // Suponiendo que getAll() devuelve un array de películas en la base de datos interna
-        const isInDB = allFilms.some(dbFilm => Number(dbFilm.id) === fetchedFilm.id);
+        const isInDB = allFilms.some(dbFilm => Number(dbFilm.idExterna) === fetchedFilm.id);
         setIsInDatabase(isInDB);
       } catch (error) {
         console.error('Error fetching movie details:', error);
@@ -64,7 +64,6 @@ const MovieView = () => {
     fetchAgeRating();
   }, [film, API_KEY]);
 
-
   if (!film) return <p>Cargando...</p>;
 
   // Verificar si film.genres es un array antes de mapearlo
@@ -103,11 +102,4 @@ const MovieView = () => {
 };
 
 export default MovieView;
-
-
-
-
-
-
-
 

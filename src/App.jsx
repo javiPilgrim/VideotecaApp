@@ -22,7 +22,7 @@ const App = () => {
 
   const handleLogout = async () => {
     if (currentUser) {
-      await userService.updateUser(currentUser.id, { ...currentUser, online: false });
+      await userService.updateUser(currentUser._id, { ...currentUser, online: false });
       setCurrentUser(null);
       localStorage.clear(); // Limpiar todos los datos de localStorage al hacer logout
     }
