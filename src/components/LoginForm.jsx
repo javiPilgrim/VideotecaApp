@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import userService from '../services/users';
 import { useNavigate } from 'react-router-dom';
+//import './loginForm.css';
+
 
 
 
@@ -38,13 +40,16 @@ const LoginForm = ({ handleLogin, nav }) => {
 
   return (
     <div className="login-form">
+      <div className="titulo">
       <h2>Iniciar Sesión</h2>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="username">Nombre de usuario</label>
           <input
             type="text"
             id="username"
+            placeholder='Nombre del usuario'
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -55,15 +60,16 @@ const LoginForm = ({ handleLogin, nav }) => {
           <input
             type="password"
             id="password"
+            placeholder='password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
         {error && <p className="error-message">{error}</p>}
-        <button type="submit">Iniciar Sesión</button>
+        <button className="loginButton" type="submit">Iniciar Sesión</button>
       </form>
-      <button onClick={handleRegister}>Registrar</button>
+      <button className="loginButton" onClick={handleRegister}>Registrar</button>
     </div>
   );
 };

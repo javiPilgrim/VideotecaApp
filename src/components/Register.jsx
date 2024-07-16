@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import userService from '../services/users';
+import './Register.css'; // Importa el archivo CSS
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -28,6 +29,10 @@ const Register = () => {
       console.error('Error al registrar usuario:', error);
       // Manejo de errores, como mostrar un mensaje de error al usuario
     }
+  };
+
+  const handleCancel = () => {
+    navigate('/'); // Redirige a la página raíz
   };
 
   return (
@@ -74,11 +79,15 @@ const Register = () => {
             required
           />
         </div>
-        <button type="submit">Registrarse</button>
+        <div className="button-group">
+          <button className="registerButton" type="submit">Registrarse</button>
+          <button className="registerButton" type="button" onClick={handleCancel}>Cancelar</button>
+        </div>
       </form>
     </div>
   );
 };
 
 export default Register;
+
 
